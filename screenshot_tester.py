@@ -240,6 +240,24 @@ class ScreenshotTester:
             failure_path = self.take_screenshot(f"failure_{os.path.basename(target_image)}")
             raise AssertionError(f"{error_msg} (Failure screenshot saved to {failure_path})")
     
+    def type(self, text):
+        """
+        Type text into the active element
+        
+        Args:
+            text (str): Text to type
+        """
+        pyautogui.typewrite(text)
+
+    def press_key(self, key):
+        """
+        Press a key
+        
+        Args:
+            key (str): Key to press
+        """
+        pyautogui.press(key)
+        
     def close(self):
         """Close the browser and clean up resources"""
         if hasattr(self, 'driver') and self.driver:
