@@ -42,7 +42,7 @@ def run_ajk_test():
         can_automate = False
     
     # Initialize the screenshot tester
-    tester = ScreenshotTester(headless=False)
+    tester = ScreenshotTester()
     
     try:
         # Navigate to AJK Projects
