@@ -62,6 +62,12 @@ finally:
     tester.close()
 ```
 
+### Example test
+You can run a provided example test with the following:
+```
+python -m simple_test.simple_test
+```
+
 ## Key Methods
 
 - `__init__(browser='chrome', headless=False, screenshots_dir='screenshots')`: Initialize the tester
