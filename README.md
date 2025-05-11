@@ -17,11 +17,7 @@ A Python-based tool for automated visual testing using screenshot comparison and
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
+1. Clone the repository
 
 2. Create and activate a virtual environment:
 ```bash
